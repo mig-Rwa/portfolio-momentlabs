@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
+    <!-- Loading Indicator -->
+    <div id="loading-indicator" class="loading-placeholder">
+        <div class="loading-spinner"></div>
+    </div>
+
     <nav class="navbar">
         <div class="logo-container">
             <img src="public/logo/MS-logo.jpg" alt="MOMENT LABS STUDIOS Logo" class="nav-logo">
@@ -199,7 +204,33 @@
         <p>&copy; 2024 MOMENT LABS STUDIOS. All rights reserved.</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS with error handling
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                if (typeof AOS !== 'undefined') {
+                    AOS.init({
+                        duration: 800,
+                        easing: 'ease-in-out',
+                        once: true,
+                        offset: 100
+                    });
+                } else {
+                    console.error('AOS library not loaded');
+                }
+            } catch (error) {
+                console.error('Error initializing AOS:', error);
+            }
+            
+            // Hide loading indicator
+            const loadingIndicator = document.getElementById('loading-indicator');
+            if (loadingIndicator) {
+                loadingIndicator.style.display = 'none';
+            }
+        });
+    </script>
     <script src="script.js"></script>
     <script src="js/gallery.js"></script>
 
