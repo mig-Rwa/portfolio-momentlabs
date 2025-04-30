@@ -24,47 +24,47 @@ document.addEventListener('DOMContentLoaded', function() {
 // Gallery images
 const galleryImages = [
     {
-        src: './public/images/photosample1.JPG',
+        src: '/portfolio-momentlabs/public/images/photosample1.JPG',
         title: 'Urban Exploration',
         description: 'Capturing the essence of city life'
     },
     {
-        src: './public/images/photosample2.JPG',
+        src: '/portfolio-momentlabs/public/images/photosample2.JPG',
         title: 'Natural Beauty',
         description: 'The wonders of nature through our lens'
     },
     {
-        src: './public/images/photosample3.JPG',
+        src: '/portfolio-momentlabs/public/images/photosample3.JPG',
         title: 'Portrait Excellence',
         description: 'Professional portrait photography'
     },
     {
-        src: './public/images/weddings/wedsample1.JPG',
+        src: '/portfolio-momentlabs/public/images/weddings/wedsample1.JPG',
         title: 'Wedding Memories',
         description: 'Capturing love stories'
     },
     {
-        src: './public/images/weddings/engagement.JPG',
+        src: '/portfolio-momentlabs/public/images/weddings/engagement.JPG',
         title: 'Engagement Session',
         description: 'The beginning of forever'
     },
     {
-        src: './public/images/weddings/wedsample2.JPG',
+        src: '/portfolio-momentlabs/public/images/weddings/wedsample2.JPG',
         title: 'Wedding Day',
         description: 'Celebrating love and commitment'
     },
     {
-        src: './public/images/photosample4.JPG',
+        src: '/portfolio-momentlabs/public/images/photosample4.JPG',
         title: 'Creative Vision',
         description: 'Artistic photography at its finest'
     },
     {
-        src: './public/images/photosample5.JPG',
+        src: '/portfolio-momentlabs/public/images/photosample5.JPG',
         title: 'Moment in Time',
         description: 'Capturing life\'s precious moments'
     },
     {
-        src: './public/images/me.JPG',
+        src: '/portfolio-momentlabs/public/images/me.JPG',
         title: 'Studio Portrait',
         description: 'Professional studio photography'
     }
