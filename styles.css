@@ -23,7 +23,27 @@ html, body {
     position: relative;
 }
 
-/* Scale fix for deployed version */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Hero Section */
 .hero {
     position: relative;
     min-height: 100vh;
@@ -38,6 +58,7 @@ html, body {
     color: white;
     padding: 80px 0;
     margin-top: 0;
+    z-index: 1;
 }
 
 .hero-content {
@@ -75,12 +96,6 @@ html, body {
 .footer-logo-img {
     width: 120px;
     height: auto;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
 }
 
 /* Loading States */
@@ -140,46 +155,6 @@ body {
     }
 }
 
-/* Navigation */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 0.5rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin-left: 2rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #2c3e50;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #3498db;
-}
-
 /* Hero Section */
 .hero::before {
     content: '';
@@ -207,25 +182,30 @@ body {
 /* About Section */
 .about {
     position: relative;
-    z-index: 1;
     padding: 80px 2rem;
     background-color: #fff;
     margin-top: 0;
+    z-index: 2;
 }
 
 .about-content {
+    position: relative;
+    z-index: 3;
     max-width: 1200px;
     margin: 0 auto;
-    position: relative;
-    z-index: 2;
+    width: 100%;
+    padding: 0 1rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
 }
 
 .about h2 {
-    font-size: 2.5rem;
+    position: relative;
+    z-index: 3;
+    text-align: center;
     margin-bottom: 2rem;
+    font-size: 2.5rem;
     color: #2c3e50;
 }
 
@@ -255,19 +235,23 @@ body {
 /* Gallery Section */
 .gallery {
     position: relative;
-    z-index: 1;
     padding: 100px 0;
     background-color: var(--white);
+    z-index: 2;
 }
 
 .gallery h2 {
+    position: relative;
+    z-index: 3;
     text-align: center;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
     color: #2c3e50;
 }
 
 .gallery-grid {
+    position: relative;
+    z-index: 3;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -326,20 +310,26 @@ body {
 /* Contact Section */
 .contact {
     position: relative;
-    z-index: 1;
     padding: 5rem 2rem;
     background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
+    z-index: 2;
 }
 
 .contact-wrapper {
+    position: relative;
+    z-index: 3;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
 }
 
 .contact h2 {
+    position: relative;
+    z-index: 3;
     text-align: center;
-    font-size: 2.5rem;
     margin-bottom: 1rem;
+    font-size: 2.5rem;
     color: #2c3e50;
 }
 
@@ -570,12 +560,12 @@ body {
 /* Footer */
 footer {
     position: relative;
-    z-index: 1;
     background-color: #2c3e50;
     color: white;
     padding: 2rem;
     text-align: center;
     margin-top: 0;
+    z-index: 1000;
 }
 
 .social-links {
@@ -646,19 +636,23 @@ footer {
 /* Services Section */
 .services {
     position: relative;
-    z-index: 1;
     padding: 100px 0;
     background-color: var(--light-bg);
+    z-index: 2;
 }
 
 .services h2 {
+    position: relative;
+    z-index: 3;
     text-align: center;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
     color: #2c3e50;
 }
 
 .services-grid {
+    position: relative;
+    z-index: 3;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -694,19 +688,23 @@ footer {
 /* Featured Section */
 .featured {
     position: relative;
-    z-index: 1;
     padding: 5rem 2rem;
     background-color: #f9f9f9;
+    z-index: 2;
 }
 
 .featured h2 {
+    position: relative;
+    z-index: 3;
     text-align: center;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
     color: #2c3e50;
 }
 
 .featured-grid {
+    position: relative;
+    z-index: 3;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 2rem;
@@ -751,19 +749,23 @@ footer {
 /* Testimonials Section */
 .testimonials {
     position: relative;
-    z-index: 1;
     padding: 5rem 2rem;
     background-color: white;
+    z-index: 2;
 }
 
 .testimonials h2 {
+    position: relative;
+    z-index: 3;
     text-align: center;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
     color: #2c3e50;
 }
 
 .testimonials-container {
+    position: relative;
+    z-index: 3;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -840,7 +842,6 @@ footer {
 /* Page Header */
 .page-header {
     position: relative;
-    z-index: 1;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1506744038136-462738349b48');
     background-size: cover;
     background-position: center;
