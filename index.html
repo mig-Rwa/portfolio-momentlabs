@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMENT LABS STUDIOS | Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="public/logo/MS-logo.jpg" alt="MOMENT LABS STUDIOS Logo" class="nav-logo">
+            <div class="logo-text">MOMENT LABS STUDIOS</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="public/logo/MS-logo.jpg" alt="MOMENT LABS STUDIOS Logo" class="hero-logo">
+            <h1 class="animate-text">Capturing Moments,<br>Preserving Memories</h1>
+            <p class="animate-text">Professional Photography Studio</p>
+            <a href="#gallery" class="cta-button pulse">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content" data-aos="fade-up">
+            <h2>About Us</h2>
+            <p>Welcome to MOMENT LABS STUDIOS, where we transform ordinary moments into extraordinary memories. Our studio brings together a team of passionate photographers dedicated to capturing the essence of every story through our lens.</p>
+            <p>With years of experience in portrait, landscape, and documentary photography, we specialize in creating compelling visual narratives that resonate with emotion and authenticity.</p>
+            <a href="about.html" class="see-more-btn">Learn More About Us</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2 data-aos="fade-up">My Services</h2>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-camera"></i>
+                <h3>Portrait Photography</h3>
+                <p>Capturing the essence of individuals and groups in stunning portraits.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-mountain"></i>
+                <h3>Landscape Photography</h3>
+                <p>Showcasing the breathtaking beauty of Norwegian and Rwandan landscapes.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-book"></i>
+                <h3>Documentary</h3>
+                <p>Telling compelling stories through powerful documentary photography.</p>
+            </div>
+        </div>
+        <div class="text-center" data-aos="fade-up">
+            <a href="services.html" class="see-more-btn">View All Services</a>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2 data-aos="fade-up">Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Gallery items will be added dynamically via JavaScript -->
+        </div>
+        <div class="text-center" data-aos="fade-up">
+            <a href="gallery.html" class="see-more-btn">View Full Gallery</a>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2 data-aos="fade-up">Client Testimonials</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card" data-aos="fade-right">
+                <div class="testimonial-content">
+                    <p>"Absolutely stunning work! The photographer captured our wedding perfectly, blending Norwegian and Rwandan traditions beautifully."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Client">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Wedding Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card" data-aos="fade-left">
+                <div class="testimonial-content">
+                    <p>"The landscape photography is breathtaking. Each photo tells a story and captures the essence of both Norway and Rwanda."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Client">
+                        <div>
+                            <h4>Michael Brown</h4>
+                            <p>Art Gallery Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center" data-aos="fade-up">
+            <a href="testimonials.html" class="see-more-btn">Read More Reviews</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-wrapper">
+            <h2 data-aos="fade-up">Get in Touch</h2>
+            <p class="contact-intro" data-aos="fade-up" data-aos-delay="100">Let's create something amazing together</p>
+            
+            <div class="contact-container">
+                <div class="contact-form-wrapper" data-aos="fade-right" data-aos-delay="200">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-wrapper" data-aos="fade-left" data-aos-delay="300">
+                    <div class="contact-info-card">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h3>Email</h3>
+                                <p>contact@momentlabsstudios.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h3>Location</h3>
+                                <p>New York City, NY</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links-contact">
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="public/logo/MS-logo.jpg" alt="MOMENT LABS STUDIOS Logo" class="footer-logo-img">
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2024 MOMENT LABS STUDIOS. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="js/gallery.js"></script>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-prev">&lt;</button>
+        <button class="lightbox-next">&gt;</button>
+        <img src="" alt="">
+        <div class="lightbox-caption"></div>
+    </div>
+</body>
+</html> 

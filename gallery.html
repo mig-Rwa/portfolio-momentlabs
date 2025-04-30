@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Your Name</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>Photo Gallery</h1>
+        <p>Capturing life's precious moments through my lens</p>
+    </header>
+
+    <section class="gallery-page">
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="general">General</button>
+            <button class="filter-btn" data-filter="weddings">Weddings</button>
+        </div>
+
+        <div class="gallery-masonry">
+            <!-- General Photography -->
+            <div class="gallery-item" data-category="general">
+                <img src="public/images/photosample1.JPG" alt="Nature Photography">
+                <div class="gallery-item-overlay">
+                    <h3>Natural Beauty</h3>
+                    <p>Capturing the essence of nature</p>
+                </div>
+                <button class="expand-btn"><i class="fas fa-expand"></i></button>
+            </div>
+
+            <div class="gallery-item" data-category="general">
+                <img src="public/images/photosample2.JPG" alt="Urban Photography">
+                <div class="gallery-item-overlay">
+                    <h3>Urban Landscapes</h3>
+                    <p>City life through the lens</p>
+                </div>
+                <button class="expand-btn"><i class="fas fa-expand"></i></button>
+            </div>
+
+            <div class="gallery-item" data-category="general">
+                <img src="public/images/photosample3.JPG" alt="Portrait Photography">
+                <div class="gallery-item-overlay">
+                    <h3>Portrait Art</h3>
+                    <p>Capturing personalities</p>
+                </div>
+                <button class="expand-btn"><i class="fas fa-expand"></i></button>
+            </div>
+
+            <div class="gallery-item" data-category="general">
+                <img src="public/images/photosample4.JPG" alt="Street Photography">
+                <div class="gallery-item-overlay">
+                    <h3>Street Life</h3>
+                    <p>Moments in motion</p>
+                </div>
+                <button class="expand-btn"><i class="fas fa-expand"></i></button>
+            </div>
+
+            <div class="gallery-item" data-category="general">
+                <img src="public/images/photosample5.JPG" alt="Abstract Photography">
+                <div class="gallery-item-overlay">
+                    <h3>Abstract Views</h3>
+                    <p>Art in details</p>
+                </div>
+                <button class="expand-btn"><i class="fas fa-expand"></i></button>
+            </div>
+
+            <!-- Wedding Photography -->
+            <div class="gallery-item" data-category="weddings">
+                <img src="public/images/weddings/wedsample1.JPG" alt="Wedding Photography">
+                <div class="gallery-item-overlay">
+                    <h3>Wedding Moments</h3>
+                    <p>Celebrating love stories</p>
+                </div>
+                <button class="expand-btn"><i class="fas fa-expand"></i></button>
+            </div>
+
+            <div class="gallery-item" data-category="weddings">
+                <img src="public/images/weddings/wedsample2.JPG" alt="Wedding Ceremony">
+                <div class="gallery-item-overlay">
+                    <h3>Ceremony Magic</h3>
+                    <p>Sacred moments captured</p>
+                </div>
+                <button class="expand-btn"><i class="fas fa-expand"></i></button>
+            </div>
+
+            <div class="gallery-item" data-category="weddings">
+                <img src="public/images/weddings/wedsample3.JPG" alt="Wedding Details">
+                <div class="gallery-item-overlay">
+                    <h3>Wedding Details</h3>
+                    <p>The little moments that matter</p>
+                </div>
+                <button class="expand-btn"><i class="fas fa-expand"></i></button>
+            </div>
+
+            <div class="gallery-item" data-category="weddings">
+                <img src="public/images/weddings/engagement.JPG" alt="Engagement Session">
+                <div class="gallery-item-overlay">
+                    <h3>Engagement Stories</h3>
+                    <p>Love in the making</p>
+                </div>
+                <button class="expand-btn"><i class="fas fa-expand"></i></button>
+            </div>
+
+            <div class="gallery-item" data-category="weddings">
+                <img src="public/images/weddings/engagement2.JPG" alt="Engagement Photography">
+                <div class="gallery-item-overlay">
+                    <h3>Engagement Moments</h3>
+                    <p>Beginning of forever</p>
+                </div>
+                <button class="expand-btn"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <button class="lightbox-close"><i class="fas fa-times"></i></button>
+        <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Photography Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html> 
